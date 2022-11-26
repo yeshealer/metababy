@@ -1,0 +1,203 @@
+[{
+    "inputs": [{
+        "internalType": "address",
+        "name": "_metaBaby",
+        "type": "address"
+    }],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+}, {
+    "anonymous": false,
+    "inputs": [{
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_endTime",
+        "type": "uint256"
+    }],
+    "name": "PresalePaused",
+    "type": "event"
+}, {
+    "anonymous": false,
+    "inputs": [{
+        "indexed": false,
+        "internalType": "address",
+        "name": "_registeredAddress",
+        "type": "address"
+    }, {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_weiAmount",
+        "type": "uint256"
+    }, {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_stripAmount",
+        "type": "uint256"
+    }],
+    "name": "PresaleRegistered",
+    "type": "event"
+}, {
+    "inputs": [{
+        "internalType": "address[]",
+        "name": "_whitelistedAddresses",
+        "type": "address[]"
+    }],
+    "name": "addwhitelistedAddresses",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "inputs": [],
+    "name": "deposit",
+    "outputs": [{
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+    }],
+    "stateMutability": "payable",
+    "type": "function"
+}, {
+    "inputs": [],
+    "name": "hardCapInWei",
+    "outputs": [{
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+    }],
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "inputs": [],
+    "name": "maxInvestInWei",
+    "outputs": [{
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+    }],
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "inputs": [],
+    "name": "metaBaby",
+    "outputs": [{
+        "internalType": "contract IMetaBaby",
+        "name": "",
+        "type": "address"
+    }],
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "inputs": [],
+    "name": "minInvestInWei",
+    "outputs": [{
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+    }],
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "inputs": [{
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+    }],
+    "name": "recipients",
+    "outputs": [{
+        "internalType": "uint256",
+        "name": "amountDepositedWei",
+        "type": "uint256"
+    }, {
+        "internalType": "uint256",
+        "name": "amountMetaBaby",
+        "type": "uint256"
+    }],
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "inputs": [{
+        "internalType": "address",
+        "name": "_metaBaby",
+        "type": "address"
+    }],
+    "name": "setMetaBabyTokenAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "inputs": [],
+    "name": "soldMetaBabyAmount",
+    "outputs": [{
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+    }],
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "inputs": [],
+    "name": "tokenAmountPerBNB",
+    "outputs": [{
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+    }],
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "inputs": [],
+    "name": "totalCollectedWei",
+    "outputs": [{
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+    }],
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "inputs": [{
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+    }],
+    "name": "whitelistedAddresses",
+    "outputs": [{
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+    }],
+    "stateMutability": "view",
+    "type": "function"
+}, {
+    "inputs": [{
+        "internalType": "address",
+        "name": "_withdrawalAddress",
+        "type": "address"
+    }],
+    "name": "withdrawFunds",
+    "outputs": [{
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+    }],
+    "stateMutability": "nonpayable",
+    "type": "function"
+}, {
+    "inputs": [{
+        "internalType": "address",
+        "name": "_token",
+        "type": "address"
+    }, {
+        "internalType": "address",
+        "name": "_withdrawalAddress",
+        "type": "address"
+    }],
+    "name": "withdrawWrongTokenByEmergency",
+    "outputs": [{
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+    }],
+    "stateMutability": "nonpayable",
+    "type": "function"
+}]
